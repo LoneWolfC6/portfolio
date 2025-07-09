@@ -53,3 +53,39 @@ h1, h2, h3 {
 .project-item img:hover {
   transform: scale(1.02);
 }
+
+/* Skills Section */
+.skills-section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.skills-section h2 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #222;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #e63946;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #e63946;
+  color: #fff;
+}

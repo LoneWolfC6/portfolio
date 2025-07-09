@@ -1,7 +1,7 @@
 # Personal Portfolio Website - Brandon Jamison
 
 A personal portfolio website showcasing web development projects built from scratch.  
-This site was created to serve as an online portfolio for Brandon Jamison, featuring fully responsive, multi-page demo websites with clean, functional design.
+This site serves as an online portfolio for Brandon Jamison, featuring fully responsive, multi-page demo websites with clean, functional design.
 
 ---
 
@@ -15,8 +15,9 @@ This site was created to serve as an online portfolio for Brandon Jamison, featu
 ---
 
 ## Projects Featured:
+
 ### 1. Mario's Pizza Parlor
-A responsive demo site for a fictional pizza restaurant with interactive ordering and local storage.
+A responsive pizza restaurant website demo featuring online ordering, cart functionality, and local storage.
 
 - [View Live Project](https://lonewolfc6.github.io/pizza-parlor-demo/)
 - [View Source Code](https://github.com/lonewolfc6/pizza-parlor-demo)
@@ -26,6 +27,12 @@ A bold, modern barbershop site demo featuring a video background, booking form, 
 
 - [View Live Project](https://lonewolfc6.github.io/barbershop-demo/)
 - [View Source Code](https://github.com/lonewolfc6/barbershop-demo)
+
+### 3. Inkspire Collective Tattoo Parlor
+An edgy, dark tattoo parlor demo site with a video background, artist showcase, gallery, and booking form.
+
+- [View Live Project](https://lonewolfc6.github.io/tattoo-parlor-demo/)
+- [View Source Code](https://github.com/lonewolfc6/tattoo-parlor-demo)
 
 ---
 
@@ -37,7 +44,6 @@ A bold, modern barbershop site demo featuring a video background, booking form, 
 ---
 
 ## Live Demo:
-Check out the live portfolio here:  
 [https://lonewolfc6.github.io/portfolio/](https://lonewolfc6.github.io/portfolio/)
 
 ---

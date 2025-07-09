@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.site-header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.projects-section,
+.about-section,
+.contact-section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a8222d;
+}

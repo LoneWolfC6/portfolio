@@ -40,3 +40,16 @@ h1, h2, h3 {
 .btn:hover {
   background-color: #a8222d;
 }
+
+.project-item img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+  transform: scale(1.02);
+}

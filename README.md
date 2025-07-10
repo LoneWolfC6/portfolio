@@ -57,4 +57,4 @@ It will be expanded as more projects are completed.
 
 ## Contact:
 Built by Brandon Jamison  
-For project inquiries or collaborations, feel free to [email me](mailto:your-email@example.com).
+For project inquiries or collaborations, feel free to [email me](brandonjamison.dev@gmail.com).

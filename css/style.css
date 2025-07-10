@@ -122,3 +122,11 @@ h1, h2, h3 {
 .contact-section textarea::placeholder {
   color: #999;
 }
+
+section {
+  border-bottom: 1px solid #333;
+}
+
+.site-footer {
+  background-color: #000;
+}

@@ -34,6 +34,18 @@ An edgy, dark tattoo parlor demo site with a video background, artist showcase, 
 - [View Live Project](https://lonewolfc6.github.io/tattoo-parlor-demo/)
 - [View Source Code](https://github.com/lonewolfc6/tattoo-parlor-demo)
 
+### 4. Solstice Lens Photography Portfolio
+A clean, minimalist photography portfolio demo focused on showcasing visual work with an elegant gallery layout, subtle animations, and fully responsive design.
+
+- [View Live Project](https://lonewolfc6.github.io/photography-portfolio-demo/)
+- [View Source Code](https://github.com/lonewolfc6/photography-portfolio-demo)
+
+### 5. Summit Nexus 2025 Conference
+A professional, multi-page event website demo for a fictional creative technology conference. Features include a live countdown timer, persistent dark mode toggle, sticky navigation, and fully responsive layouts.
+
+- [View Live Project](https://lonewolfc6.github.io/summit-nexus-demo/)
+- [View Source Code](https://github.com/lonewolfc6/summit-nexus-demo)
+
 ---
 
 ## Technologies Used:

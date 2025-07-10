@@ -130,3 +130,16 @@ section {
 .site-footer {
   background-color: #000;
 }
+
+.profile-photo {
+  width: 300px;
+  border-radius: 50%;
+  border: 3px solid #e63946;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}

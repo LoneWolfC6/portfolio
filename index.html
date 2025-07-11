@@ -16,6 +16,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <nav class="site-nav">
+  <ul>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme"><span id="theme-icon">☀️</span> Theme</button></li>
+  </ul>
+</nav>
+
   <!-- Header / Intro -->
   <header class="site-header">
     <h1>Brandon Jamison</h1>
@@ -23,7 +33,7 @@
   </header>
 
   <!-- Projects -->
-  <section class="projects-section">
+  <section id="projects" class="projects-section">
   <h2>Projects</h2>
 
   <div class="project-item">
@@ -69,7 +79,7 @@
 </section>
 
   <!-- Skills -->
-  <section class="skills-section">
+  <section id="skills" class="skills-section">
     <h2>Skills & Tools</h2>
     <ul class="skills-list">
       <li>HTML5</li>
@@ -86,7 +96,7 @@
 
 
   <!-- About -->
-  <section class="about-section">
+  <section id="about" class="about-section">
     <h2>About Me</h2>
     <img src="images/Brandon-Jamison.jpeg" alt="Photo of Brandon Jamison" class="profile-photo" loading="lazy">
     <p>Hi there! I'm Brandon Jamison, a developer with a bachelor's degree in computer science. I currently run Jamison Collective, where I focus on building creative, functional websites for small businesses and personal projects. While my background has been focused on backend projects, I've recently started exploring front-end development-and I've been enjoying every bit of it.</p>
@@ -95,7 +105,7 @@
   </section>
 
   <!-- Contact -->
-  <section class="contact-section">
+  <section id="contact" class="contact-section">
     <h2>Contact</h2>
     <p>Want to work together? Feel free to reach out via email:</p>
     
@@ -106,6 +116,45 @@
     </form>
 
   </section>
+
+  <script>
+  document.querySelectorAll('.site-nav a').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const target = document.getElementById(targetId);
+      if (target) {
+        window.scrollTo({
+          top: target.offsetTop - 60, // Adjust this offset as needed
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+
+  // Set initial icon based on theme
+  const savedTheme = localStorage.getItem('theme');
+  const isLight = savedTheme === 'light';
+  if (isLight) {
+    document.body.classList.add('light-theme');
+  }
+  // Always show the *next* theme option
+  themeIcon.textContent = isLight ? '🌙' : '☀️';
+
+  themeToggle.addEventListener('click', () => {
+    const isLightNow = document.body.classList.toggle('light-theme');
+    localStorage.setItem('theme', isLightNow ? 'light' : 'dark');
+    // Update icon to show what comes next
+    themeIcon.textContent = isLightNow ? '🌙' : '☀️';
+  });
+</script>
+
+
 </body>
 
 <!-- Footer -->

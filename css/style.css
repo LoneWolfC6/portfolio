@@ -226,3 +226,18 @@ section {
   color: #e63946;
 }
 
+/* Scroll Progress Bar */
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background-color: #e63946;
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+}
+
+body.light-theme .scroll-progress-bar {
+  background-color: #333; /* Darker for light theme */
+}

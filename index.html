@@ -17,6 +17,7 @@
 </head>
 <body>
   <nav class="site-nav">
+    <div class="scroll-progress-bar"></div>
   <ul>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -151,6 +152,17 @@
     localStorage.setItem('theme', isLightNow ? 'light' : 'dark');
     // Update icon to show what comes next
     themeIcon.textContent = isLightNow ? '🌙' : '☀️';
+  });
+</script>
+
+<script>
+  const progressBar = document.querySelector('.scroll-progress-bar');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / pageHeight) * 100;
+    progressBar.style.width = `${scrollPercent}%`;
   });
 </script>
 

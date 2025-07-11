@@ -1,3 +1,6 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
 body {
   font-family: Arial, sans-serif;
   background-color: #111;
@@ -7,25 +10,25 @@ body {
   line-height: 1.6;
 }
 
-.site-header {
-  text-align: center;
-  padding: 3rem 1rem;
-}
-
-.projects-section,
-.about-section,
-.contact-section {
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 h1, h2, h3 {
   text-transform: uppercase;
 }
 
-/* Light Theme */
+section {
+  border-bottom: 1px solid #333;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   THEME STYLES
+=========================== */
 body.light-theme {
   background-color: #fafafa;
   color: #111;
@@ -58,127 +61,13 @@ body.light-theme .btn:hover {
   color: #fff;
 }
 
-
-.btn {
-  display: inline-block;
-  margin: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #e63946;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+body.light-theme .scroll-progress-bar {
+  background-color: #333; /* Darker for light theme */
 }
 
-.btn:hover {
-  background-color: #a8222d;
-}
-
-.project-item img {
-  width: 100%;
-  max-width: 700px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  margin-bottom: 1rem;
-  transition: transform 0.3s ease;
-}
-
-.project-item img:hover {
-  transform: scale(1.02);
-}
-
-/* Skills Section */
-.skills-section {
-  padding: 4rem 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.skills-section h2 {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  padding: 0;
-  list-style: none;
-}
-
-.skills-list li {
-  background-color: #222;
-  padding: 0.75rem 1.5rem;
-  border-radius: 4px;
-  border: 1px solid #e63946;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.skills-list li:hover {
-  background-color: #e63946;
-  color: #fff;
-}
-
-.site-footer {
-  text-align: center;
-  padding: 2rem;
-  background-color: #111;
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* Contact Form Styles */
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.contact-section input,
-.contact-section textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #222;
-  color: #f4f4f4;
-}
-
-.contact-section input::placeholder,
-.contact-section textarea::placeholder {
-  color: #999;
-}
-
-section {
-  border-bottom: 1px solid #333;
-}
-
-.site-footer {
-  background-color: #000;
-}
-
-.profile-photo {
-  width: 200px;
-  border-radius: 50%;
-  border: 3px solid #e63946;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
-}
-
-.profile-photo:hover {
-  transform: scale(1.05);
-}
-
-/* Sticky Nav Styles */
+/* ===========================
+   NAVIGATION STYLES
+=========================== */
 .site-nav {
   position: sticky;
   top: 0;
@@ -208,7 +97,7 @@ section {
   color: #e63946;
 }
 
-/* Nav Theme Toggle Button (Blends with Links) */
+/* Theme Toggle Button (blends with links) */
 .theme-toggle-btn {
   background: none;
   border: none;
@@ -226,7 +115,122 @@ section {
   color: #e63946;
 }
 
-/* Scroll Progress Bar */
+/* ===========================
+   HEADER SECTION
+=========================== */
+.site-header {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+/* ===========================
+   SECTIONS: PROJECTS, SKILLS, ABOUT, CONTACT
+=========================== */
+.projects-section,
+.about-section,
+.contact-section,
+.skills-section {
+  padding: 4rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ===========================
+   COMPONENTS & ELEMENTS
+=========================== */
+.btn {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #e63946;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a8222d;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.project-item img:hover {
+  transform: scale(1.02);
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background-color: #222;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  border: 1px solid #e63946;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-section input,
+.contact-section textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #222;
+  color: #f4f4f4;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #999;
+}
+
+.profile-photo {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #e63946;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+/* ===========================
+   ANIMATIONS & EFFECTS
+=========================== */
 .scroll-progress-bar {
   position: fixed;
   top: 0;
@@ -238,6 +242,14 @@ section {
   transition: width 0.25s ease-out;
 }
 
-body.light-theme .scroll-progress-bar {
-  background-color: #333; /* Darker for light theme */
+.reveal-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.reveal-section.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+

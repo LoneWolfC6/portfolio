@@ -1,86 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NLPYPVHXTF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NLPYPVHXTF');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brandon Jamison | Web Developer Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NLPYPVHXTF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-NLPYPVHXTF');
+  </script>
 </head>
 <body>
+  <!-- Navigation -->
   <nav class="site-nav">
     <div class="scroll-progress-bar"></div>
-  <ul>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme"><span id="theme-icon">☀️</span> Theme</button></li>
-  </ul>
-</nav>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+          <span id="theme-icon">☀️</span> Theme
+        </button>
+      </li>
+    </ul>
+  </nav>
 
-  <!-- Header / Intro -->
+  <!-- Header -->
   <header class="site-header">
     <h1>Brandon Jamison</h1>
     <p>Web Developer | Jamison Collective | Portfolio</p>
   </header>
 
-  <!-- Projects -->
-  <section id="projects" class="projects-section">
-  <h2>Projects</h2>
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section reveal-section">
+    <h2>Projects</h2>
 
-  <div class="project-item">
-    <h3>Mario's Pizza Parlor</h3>
-    <img src="images/pizza-home.png" alt="Screenshot of Mario's Pizza Parlor website" loading="lazy">
-    <p>A responsive pizza restaurant website demo featuring online ordering, cart functionality, and local storage.</p>
-    <a href="https://lonewolfc6.github.io/pizza-parlor-demo/" target="_blank" class="btn">View Live Project</a>
-    <a href="https://github.com/lonewolfc6/pizza-parlor-demo" target="_blank" class="btn">View Code</a>
-  </div>
+    <!-- Project Items -->
+    <div class="project-item">
+      <h3>Mario's Pizza Parlor</h3>
+      <img src="images/pizza-home.png" alt="Screenshot of Mario's Pizza Parlor website" loading="lazy">
+      <p>A responsive pizza restaurant website demo featuring online ordering, cart functionality, and local storage.</p>
+      <a href="https://lonewolfc6.github.io/pizza-parlor-demo/" target="_blank" class="btn">View Live Project</a>
+      <a href="https://github.com/lonewolfc6/pizza-parlor-demo" target="_blank" class="btn">View Code</a>
+    </div>
 
-  <div class="project-item">
-    <h3>Razor & Rebellion Barbershop</h3>
-    <img src="images/barbershop-home.png" alt="Screenshot of Razor & Rebellion Barbershop website" loading="lazy">
-    <p>A bold, modern barbershop site demo with video backgrounds, booking form, and a gallery.</p>
-    <a href="https://lonewolfc6.github.io/barbershop-demo/" target="_blank" class="btn">View Live Project</a>
-    <a href="https://github.com/lonewolfc6/barbershop-demo" target="_blank" class="btn">View Code</a>
-  </div>
+    <div class="project-item">
+      <h3>Razor & Rebellion Barbershop</h3>
+      <img src="images/barbershop-home.png" alt="Screenshot of Razor & Rebellion Barbershop website" loading="lazy">
+      <p>A bold, modern barbershop site demo with video backgrounds, booking form, and a gallery.</p>
+      <a href="https://lonewolfc6.github.io/barbershop-demo/" target="_blank" class="btn">View Live Project</a>
+      <a href="https://github.com/lonewolfc6/barbershop-demo" target="_blank" class="btn">View Code</a>
+    </div>
 
-  <div class="project-item">
-    <h3>Inkspire Collective Tattoo Parlor</h3>
-    <img src="images/tattoo-home.png" alt="Screenshot of Inkspire Collective Tattoo Parlor website" loading="lazy">
-    <p>A bold, edgy tattoo parlor website demo featuring a video background, artist showcase, booking form, and full gallery.</p>
-    <a href="https://lonewolfc6.github.io/tattoo-parlor-demo/" target="_blank" class="btn">View Live Project</a>
-    <a href="https://github.com/lonewolfc6/tattoo-parlor-demo" target="_blank" class="btn">View Code</a>
-  </div>
+    <div class="project-item">
+      <h3>Inkspire Collective Tattoo Parlor</h3>
+      <img src="images/tattoo-home.png" alt="Screenshot of Inkspire Collective Tattoo Parlor website" loading="lazy">
+      <p>A bold, edgy tattoo parlor website demo featuring a video background, artist showcase, booking form, and full gallery.</p>
+      <a href="https://lonewolfc6.github.io/tattoo-parlor-demo/" target="_blank" class="btn">View Live Project</a>
+      <a href="https://github.com/lonewolfc6/tattoo-parlor-demo" target="_blank" class="btn">View Code</a>
+    </div>
 
-  <div class="project-item">
-    <h3>Solstice Lens Photography Portfolio</h3>
-    <img src="images/photography-home.png" alt="Screenshot of Solstice Lens Photography Portfolio website" loading="lazy">
-    <p>A clean, minimalist photography portfolio demo focused on showcasing visual work with an elegant gallery layout, subtle animations, and fully responsive design.</p>
-    <a href="https://lonewolfc6.github.io/photography-portfolio-demo/" target="_blank" class="btn">View Live Project</a>
-    <a href="https://github.com/lonewolfc6/photography-portfolio-demo" target="_blank" class="btn">View Code</a>
-  </div>
+    <div class="project-item">
+      <h3>Solstice Lens Photography Portfolio</h3>
+      <img src="images/photography-home.png" alt="Screenshot of Solstice Lens Photography Portfolio website" loading="lazy">
+      <p>A clean, minimalist photography portfolio demo focused on showcasing visual work with an elegant gallery layout, subtle animations, and fully responsive design.</p>
+      <a href="https://lonewolfc6.github.io/photography-portfolio-demo/" target="_blank" class="btn">View Live Project</a>
+      <a href="https://github.com/lonewolfc6/photography-portfolio-demo" target="_blank" class="btn">View Code</a>
+    </div>
 
-  <div class="project-item">
-    <h3>Summit Nexus 2025 Conference</h3>
-    <img src="images/event-home.png" alt="Screenshot of Summit Nexus 2025 website" loading="lazy">
-    <p>A professional, multi-page event website demo for a fictional creative technology conference. Features include a live countdown timer, persistent dark mode toggle, sticky navigation, and fully responsive layouts.</p>
-    <a href="https://lonewolfc6.github.io/summit-nexus-demo/" target="_blank" class="btn">View Live Project</a>
-    <a href="https://github.com/lonewolfc6/summit-nexus-demo" target="_blank" class="btn">View Code</a>
-  </div>
+    <div class="project-item">
+      <h3>Summit Nexus 2025 Conference</h3>
+      <img src="images/event-home.png" alt="Screenshot of Summit Nexus 2025 website" loading="lazy">
+      <p>A professional, multi-page event website demo for a fictional creative technology conference. Features include a live countdown timer, persistent dark mode toggle, sticky navigation, and fully responsive layouts.</p>
+      <a href="https://lonewolfc6.github.io/summit-nexus-demo/" target="_blank" class="btn">View Live Project</a>
+      <a href="https://github.com/lonewolfc6/summit-nexus-demo" target="_blank" class="btn">View Code</a>
+    </div>
+  </section>
 
-</section>
-
-  <!-- Skills -->
-  <section id="skills" class="skills-section">
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section reveal-section">
     <h2>Skills & Tools</h2>
     <ul class="skills-list">
       <li>HTML5</li>
@@ -95,83 +100,32 @@
     </ul>
   </section>
 
-
-  <!-- About -->
-  <section id="about" class="about-section">
+  <!-- About Section -->
+  <section id="about" class="about-section reveal-section">
     <h2>About Me</h2>
     <img src="images/Brandon-Jamison.jpeg" alt="Photo of Brandon Jamison" class="profile-photo" loading="lazy">
-    <p>Hi there! I'm Brandon Jamison, a developer with a bachelor's degree in computer science. I currently run Jamison Collective, where I focus on building creative, functional websites for small businesses and personal projects. While my background has been focused on backend projects, I've recently started exploring front-end development-and I've been enjoying every bit of it.</p>
+    <p>Hi there! I'm Brandon Jamison, a developer with a bachelor's degree in computer science. I currently run Jamison Collective, where I focus on building creative, functional websites for small businesses and personal projects. While my background has been focused on backend projects, I've recently started exploring front-end development—and I've been enjoying every bit of it.</p>
     <p>I love building clean, functional websites from scratch, with an emphasis on simplicity and user-friendly design. I'm always looking for creative projects to challenge myself and grow my skills further.</p>
     <p>Whether it’s back-end logic or front-end interfaces, I enjoy finding ways to make technology work smoothly for users.</p>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact-section">
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section reveal-section">
     <h2>Contact</h2>
     <p>Want to work together? Feel free to reach out via email:</p>
-    
     <form action="https://formspree.io/f/xkgblkwg" method="POST">
       <input type="email" name="email" placeholder="Your email" required>
       <textarea name="message" placeholder="Your message" rows="5" required></textarea>
       <button type="submit" class="btn" aria-label="Send Message">Send Message</button>
     </form>
-
   </section>
 
-  <script>
-  document.querySelectorAll('.site-nav a').forEach(link => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      const target = document.getElementById(targetId);
-      if (target) {
-        window.scrollTo({
-          top: target.offsetTop - 60, // Adjust this offset as needed
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-</script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Jamison Collective | Brandon Jamison</p>
+  </footer>
 
-<script>
-  const themeToggle = document.getElementById('theme-toggle');
-  const themeIcon = document.getElementById('theme-icon');
-
-  // Set initial icon based on theme
-  const savedTheme = localStorage.getItem('theme');
-  const isLight = savedTheme === 'light';
-  if (isLight) {
-    document.body.classList.add('light-theme');
-  }
-  // Always show the *next* theme option
-  themeIcon.textContent = isLight ? '🌙' : '☀️';
-
-  themeToggle.addEventListener('click', () => {
-    const isLightNow = document.body.classList.toggle('light-theme');
-    localStorage.setItem('theme', isLightNow ? 'light' : 'dark');
-    // Update icon to show what comes next
-    themeIcon.textContent = isLightNow ? '🌙' : '☀️';
-  });
-</script>
-
-<script>
-  const progressBar = document.querySelector('.scroll-progress-bar');
-
-  window.addEventListener('scroll', () => {
-    const scrollTop = window.scrollY;
-    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / pageHeight) * 100;
-    progressBar.style.width = `${scrollPercent}%`;
-  });
-</script>
-
-
+  <!-- Main JavaScript -->
+  <script src="js/main.js"></script>
 </body>
-
-<!-- Footer -->
-<footer class="site-footer">
-  <p>&copy; 2025 Jamison Collective | Brandon Jamison</p>
-</footer>
-
 </html>
